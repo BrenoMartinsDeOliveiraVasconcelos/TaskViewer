@@ -4,20 +4,21 @@ import java.util.Scanner;
 public class Menu {
 	static int escolher() {
 		/*
-		 * Função para escolher opções
+		 * Funï¿½ï¿½o para escolher opï¿½ï¿½es
 		 */
-		boolean isNum = false; //Se é um número
-		Scanner entrada = new Scanner(System.in); //Entrada do usuário
-		String opt = ""; //Variável de opção
+		boolean isNum = false; //Se ï¿½ um nï¿½mero
+		Scanner entrada = new Scanner(System.in); //Entrada do usuï¿½rio
+		String opt = ""; //Variï¿½vel de opï¿½ï¿½o
 		String opts = "[1] Adicionar tarefa\n"
 				+ "[2] Listar tarefas\n"
-				+ "[3] Marcar como concluído"
+				+ "[3] Marcar como concluido\n"
 				+ "[4] Excluir uma tarefa\n"
 				+ "\n"
 				+ "=> ";
 		
-		// Pega um input e checa se é um número
-		int intOpt = 0; //Número da opção
+		// Pega um input e checa se ï¿½ um nï¿½mero
+		int intOpt = 0; //Nï¿½mero da opï¿½ï¿½o
+		System.out.print(opts);
 		do {
 			opt = entrada.nextLine();
 			
@@ -25,7 +26,7 @@ public class Menu {
 				intOpt = Integer.parseInt(opt);
 				isNum = true;
 			}catch (NumberFormatException e) {
-				System.out.print("Não é um número válido. \n=> ");
+				System.out.print("Numero invalido \n=> ");
 			}
 			
 		}while(!isNum);
